@@ -1,0 +1,11 @@
+{
+  "name": "tavaci-wp-theme",
+  "version": "1.0.0",
+  "description": "Theme for Tavaci Brigham City website",
+  "scripts": {
+    "start": "browser-sync start --proxy tavaci.local --files ."
+  },
+  "devDependencies": {
+    "browser-sync": "^2.28.3"
+  }
+}
