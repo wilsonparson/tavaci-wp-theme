@@ -12,10 +12,31 @@
 :root {
   --font-family-heading: 'Oswald';
   --font-family-body: 'Montserrat';
+  --hue-red: 0deg;
+  --red-50: hsl(var(--hue-red), 82%, 50%);
+  --red-60: hsl(0, 82%, 50%);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
   font-family: var(--font-family-body);
+}
+
+#flex-container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  :nth-child(2) {
+    flex: 1;
+  }
 }
 
 h1,
@@ -25,4 +46,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-heading);
+}
+
+.g-max-width-wrapper {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
