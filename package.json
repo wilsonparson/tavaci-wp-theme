@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Theme for Tavaci Brigham City website",
   "scripts": {
-    "start": "sass styles/main.scss css/styles.css --watch"
+    "start": "concurrently \"npm:watch:css\" \"npm:live-reload\"",
+    "live-reload": "browser-sync start --proxy \"tavaci.local\" --files \"css/styles.css\" \"**/*.php\"",
+    "build:css": "sass styles/main.scss css/styles.css",
+    "watch:css": "npm run build:css -- --watch"
   },
   "devDependencies": {
     "browser-sync": "^2.28.3",
+    "concurrently": "^7.6.0",
     "sass": "^1.59.3"
   },
   "prettier": {
