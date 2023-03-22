@@ -1,0 +1,20 @@
+.home {
+  #hero {
+    .headline {
+      /** Min viewport: 320px; Max viewport: 768px; */
+      font-size: clamp(3rem, 0.86rem + 10.71vw, 6rem);
+      margin-top: 48px;
+      margin-bottom: 72px;
+      line-height: 1;
+    }
+    .headline-suffix {
+      text-decoration: underline;
+    }
+
+    .blurb {
+      font-size: clamp(1rem, 0.64rem + 1.785vw, 1.5rem);
+      margin-bottom: 72px;
+      font-weight: 500;
+    }
+  }
+}

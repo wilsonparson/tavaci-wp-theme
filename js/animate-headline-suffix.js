@@ -1,6 +1,6 @@
 {
   function animateHeadlineSuffix() {
-    const headlineSuffix = document.querySelector('.headline__suffix')
+    const headlineSuffix = document.querySelector('[data-js="headline-suffix"]')
     const wordCycler = headlineSuffix.querySelector('[data-js="word-cycler"]')
     const words = wordCycler.dataset.words.split(/,\s*/)
 

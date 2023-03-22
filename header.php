@@ -8,8 +8,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
-    <header class="header">
+<body <?php body_class(); ?>>
+    <header id="header">
         <a href="/" class="logo" aria-label="Home"><?php get_template_part('template-parts/logo'); ?></a>
         <?php wp_nav_menu(); ?>
     </header>

@@ -3,7 +3,7 @@
 function enqueue_scripts()
 {
 
-    wp_enqueue_style('global-style', get_stylesheet_uri());
+    wp_enqueue_style('global-style', get_template_directory_uri() . '/css/styles.css');
     wp_enqueue_script('animate-headline-suffix', get_template_directory_uri() . '/js/animate-headline-suffix.js');
 }
 

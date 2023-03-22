@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf'),
+    url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+  --font-family-heading: 'Oswald';
+  --font-family-body: 'Montserrat';
+}
+
+body {
+  font-family: var(--font-family-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+}

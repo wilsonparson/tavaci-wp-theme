@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Theme for Tavaci Brigham City website",
   "scripts": {
-    "start": "browser-sync start --proxy tavaci.local --files ."
+    "start": "sass styles/main.scss css/styles.css --watch"
   },
   "devDependencies": {
-    "browser-sync": "^2.28.3"
+    "browser-sync": "^2.28.3",
+    "sass": "^1.59.3"
   },
   "prettier": {
     "semi": false,

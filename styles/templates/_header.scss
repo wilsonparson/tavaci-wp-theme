@@ -1,0 +1,28 @@
+#header {
+  display: flex;
+
+  a.logo {
+    width: 84px;
+    color: inherit;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  .menu-item a {
+    font-family: var(--font-family-heading);
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: initial;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
