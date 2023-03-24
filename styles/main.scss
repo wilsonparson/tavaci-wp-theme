@@ -1,5 +1,8 @@
+@use 'vars';
 @use 'global';
 @use 'table';
+
+@use 'template-parts/mobile-nav';
 
 @use 'templates/front-page';
 @use 'templates/header';

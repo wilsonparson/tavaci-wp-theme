@@ -1,12 +1,42 @@
+@use '../media';
+
 #header {
   display: flex;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  background: green;
+  padding: 16px;
+  justify-content: space-between;
 
-  a.logo {
-    width: 84px;
+  a#logo {
+    display: block;
     color: inherit;
+    width: 64px;
+
+    @include media.tablet {
+      width: 84px;
+    }
+  }
+
+  button#hamburger-menu {
+    display: block;
+    width: 42px;
+    margin-top: -8px;
+    padding: 8px;
+    border: 0;
+    background: transparent;
+
+    div {
+      display: block;
+      background: black;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border: solid 1px black;
+      border-radius: 2px;
+    }
+  }
+
+  #desktop-nav {
+    display: none;
   }
 
   .menu {

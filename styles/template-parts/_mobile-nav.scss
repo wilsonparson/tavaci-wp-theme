@@ -1,0 +1,44 @@
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+
+  .background {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: hsla(0, 0%, 0%, 0.7);
+    opacity: 0;
+    transition: opacity 350ms;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 350px;
+    background: white;
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 350ms;
+  }
+}
+
+#mobile-nav.open {
+  // TODO: Use staged animation instead of transition
+  // TODO: Copy apple.com mobile nav design
+  visibility: visible;
+
+  .background {
+    opacity: 1;
+  }
+
+  .content {
+    transform: translateX(0%);
+  }
+}

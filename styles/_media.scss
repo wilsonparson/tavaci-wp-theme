@@ -1,0 +1,14 @@
+$tablet-min: 550px;
+$laptop-min: 1100px;
+
+@mixin tablet {
+  @media (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $laptop-min) {
+    @content;
+  }
+}
