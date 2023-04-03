@@ -1,0 +1,45 @@
+@use '../global/media';
+
+#header-content {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 24px;
+
+  > * {
+    flex-shrink: 0;
+  }
+
+  .logo {
+    color: inherit;
+    width: 70px;
+    margin-bottom: -20px;
+
+    @include media.tablet {
+      width: 80px;
+    }
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  .menu-item a {
+    font-size: 0.875rem;
+    color: inherit;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2ch;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

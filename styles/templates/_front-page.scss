@@ -1,14 +1,42 @@
-.home {
+.home /* This is a class added to the body by Wordpress */ {
+  #hero-backdrop {
+    position: relative;
+    background: hsl(357 50% 40%);
+    color: var(--red1);
+    text-align: center;
+    padding-block-end: 64px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url(../img/tavaci-concert-girls.webp);
+      background-size: cover;
+      filter: grayscale(100%);
+      mix-blend-mode: multiply;
+    }
+  }
   #hero {
+    position: relative;
+    max-width: 650px;
+    margin-inline: auto;
+    padding-inline: var(--space-body-padding-x);
+
     .headline {
       /** Min viewport: 320px; Max viewport: 768px; */
       font-size: clamp(3rem, 0.86rem + 10.71vw, 6rem);
-      margin-top: 48px;
-      margin-bottom: 72px;
+      margin-block-start: 48px;
+      margin-block-end: 72px;
       line-height: 1;
+      color: white;
     }
+
     .headline-suffix {
+      padding-inline: 8px;
+      padding-block-end: 8px;
       text-decoration: underline;
+      text-decoration-color: var(--red9);
+      font-style: normal;
     }
 
     .blurb {

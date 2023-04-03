@@ -1,8 +1,16 @@
-@use 'vars';
-@use 'global';
-@use 'table';
+// Global
+@use 'global/reset';
+@use 'global/media';
+@use 'global/vars';
+@use 'global/base';
+@use 'global/font-faces';
+@use 'global/table';
+@use 'global/utility';
 
+// Template Parts
+@use 'template-parts/hamburger-icon';
+@use 'template-parts/header-content';
 @use 'template-parts/mobile-nav';
 
+// Templates
 @use 'templates/front-page';
-@use 'templates/header';

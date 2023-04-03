@@ -1,0 +1,37 @@
+@use 'media';
+
+:root {
+  // Colors
+  // @radix-ui/red
+  --red1: hsl(359 100% 99.4%);
+  --red2: hsl(359 100% 98.6%);
+  --red3: hsl(360 100% 96.8%);
+  --red4: hsl(360 97.9% 94.8%);
+  --red5: hsl(360 90.2% 91.9%);
+  --red6: hsl(360 81.7% 87.8%);
+  --red7: hsl(359 74.2% 81.7%);
+  --red8: hsl(359 69.5% 74.3%);
+  --red9: hsl(358 75% 59%);
+  --red10: hsl(358 69.4% 55.2%);
+  --red11: hsl(358 65% 48.7%);
+  --red12: hsl(354 50% 14.6%);
+
+  --color-body: var(--red12);
+  --color-body-bg: var(--red1);
+
+  // Fonts
+  --font-family-heading: 'Oswald';
+  --font-family-body: 'Montserrat';
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+
+  // Space
+  --space-body-padding-x: 32px;
+  --space-heading-margin-top: 1.25em;
+  --space-heading-margin-bottom: 0.75em;
+
+  @include media.tablet {
+    --space-body-padding-x: 64px;
+  }
+}
