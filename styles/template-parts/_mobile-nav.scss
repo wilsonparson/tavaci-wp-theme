@@ -1,44 +1,53 @@
 #mobile-nav {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  visibility: hidden;
+  background: white;
+  padding-top: var(--space-header-padding-top);
 
-  .background {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: hsla(0, 0%, 0%, 0.7);
-    opacity: 0;
-    transition: opacity 350ms;
+  &.open {
+    display: block;
   }
 
   .content {
-    position: absolute;
-    height: 100%;
-    width: 350px;
-    background: white;
-    transform: translateX(-100%);
-    transition-property: transform;
-    transition-duration: 350ms;
-  }
-}
-
-#mobile-nav.open {
-  // TODO: Use staged animation instead of transition
-  // TODO: Copy apple.com mobile nav design
-  visibility: visible;
-
-  .background {
-    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
   }
 
-  .content {
-    transform: translateX(0%);
+  .close-button {
+    background: transparent;
+    border: none;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 300;
+    margin-right: -4px;
+    margin-top: -8px;
+  }
+
+  ul.menu {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-left: 16px;
+    margin-top: 56px;
+    font-weight: 600;
+  }
+
+  li.menu-item {
+    margin-bottom: 12px;
+  }
+
+  li.menu-item a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

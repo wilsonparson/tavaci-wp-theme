@@ -30,6 +30,8 @@
   --space-body-padding-x: 32px;
   --space-heading-margin-top: 1.25em;
   --space-heading-margin-bottom: 0.75em;
+  --space-header-padding-top: 24px;
+  --space-header-padding-bottom: 24px;
 
   @include media.tablet {
     --space-body-padding-x: 64px;

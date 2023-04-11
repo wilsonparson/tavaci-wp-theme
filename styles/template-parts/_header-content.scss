@@ -1,26 +1,27 @@
 @use '../global/media';
 
 #header-content {
-  z-index: 100;
   position: relative;
-  display: flex;
-  gap: 64px;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 24px;
 
-  > * {
-    flex-shrink: 0;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--space-header-padding-top);
+    padding-bottom: var(--space-header-padding-bottom);
   }
 
   .logo {
     color: inherit;
-    width: 70px;
-    margin-bottom: -20px;
+    width: 60px;
+    margin-bottom: -10px;
 
     @include media.tablet {
       width: 80px;
     }
+  }
+
+  .desktop-nav {
+    display: none;
   }
 
   .menu {

@@ -1,8 +1,8 @@
 <div id="mobile-nav">
-    <div class="background"></div>
-    <nav class="content">
-        <button type="button" id="close-mobile-nav">Close</button>
-        <?php get_template_part('template-parts/logo'); ?>
-        <?php wp_nav_menu(); ?>
-    </nav>
+    <div class="g-max-width-wrapper content">
+        <button type="button" class="close-button" data-js="close-mobile-nav" aria-label="Close navigation">&times;</button>
+        <nav>
+            <?php wp_nav_menu(); ?>
+        </nav>
+    </div>
 </div>

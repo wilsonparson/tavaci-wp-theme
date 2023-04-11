@@ -31,7 +31,7 @@ function animateHeadlineSuffix() {
   }
 
   const initialOptions = {
-    delay: 5000,
+    delay: 2000,
   }
 
   const forwardsOptions = {

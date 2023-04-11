@@ -1,0 +1,29 @@
+#hamburger-button {
+  background: transparent;
+  color: inherit;
+  border: none;
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+
+    span {
+      display: block;
+      border-top: solid 2px;
+
+      &:first-child {
+        width: 12px;
+      }
+
+      &:nth-child(2) {
+        width: 20px;
+      }
+
+      &:last-child {
+        width: 16px;
+      }
+    }
+  }
+}
