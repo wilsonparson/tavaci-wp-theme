@@ -16,7 +16,21 @@
   --red11: hsl(358 65% 48.7%);
   --red12: hsl(354 50% 14.6%);
 
-  --color-body: var(--red12);
+  //@radix-ui/mauve
+  --mauve1: hsl(300, 20%, 99%);
+  --mauve2: hsl(300, 7.7%, 97.5%);
+  --mauve3: hsl(294, 5.5%, 95.3%);
+  --mauve4: hsl(289, 4.7%, 93.3%);
+  --mauve5: hsl(283, 4.4%, 91.3%);
+  --mauve6: hsl(278, 4.1%, 89.1%);
+  --mauve7: hsl(271, 3.9%, 86.3%);
+  --mauve8: hsl(255, 3.7%, 78.8%);
+  --mauve9: hsl(252, 4%, 57.3%);
+  --mauve10: hsl(253, 3.5%, 53.5%);
+  --mauve11: hsl(252, 4%, 44.8%);
+  --mauve12: hsl(260, 25%, 11%);
+
+  --color-body: var(--mauve12);
   --color-body-bg: var(--red1);
 
   // Fonts
@@ -30,8 +44,7 @@
   --space-body-padding-x: 32px;
   --space-heading-margin-top: 1.25em;
   --space-heading-margin-bottom: 0.75em;
-  --space-header-padding-top: 24px;
-  --space-header-padding-bottom: 24px;
+  --space-header-height: 60px;
 
   @include media.tablet {
     --space-body-padding-x: 64px;

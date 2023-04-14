@@ -1,15 +1,27 @@
+@use './global/media';
+
 .home /* This is a class added to the body by Wordpress */ {
   #hero-backdrop {
     position: relative;
-    background: hsl(357 50% 40%);
-    color: var(--red1);
+    background: linear-gradient(black, hsl(357 50% 40%) 40%);
+    color: white;
     text-align: center;
-    padding-block-end: 64px;
+    padding-top: 180px;
+    padding-bottom: 64px;
+    border-bottom: solid 8px var(--red9);
+    margin-top: calc(var(--space-header-height) * -1);
+
+    @include media.tablet {
+      padding-top: 260px;
+    }
 
     &::before {
       content: '';
       position: absolute;
-      inset: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       background: url(../img/tavaci-concert-girls.webp);
       background-size: cover;
       filter: grayscale(100%);
@@ -25,7 +37,7 @@
     .headline {
       /** Min viewport: 320px; Max viewport: 768px; */
       font-size: clamp(3rem, 0.86rem + 10.71vw, 6rem);
-      margin-block-start: 48px;
+      margin-top: 0;
       margin-block-end: 72px;
       line-height: 1;
       color: white;

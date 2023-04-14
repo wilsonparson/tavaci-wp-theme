@@ -5,8 +5,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: white;
-  padding-top: var(--space-header-padding-top);
+  background: black;
+  color: var(--mauve1);
+  z-index: 100;
 
   &.open {
     display: block;
@@ -17,9 +18,11 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: flex-start;
+    padding-top: 14px;
   }
 
   .close-button {
+    color: inherit;
     background: transparent;
     border: none;
     font-size: 48px;

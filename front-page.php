@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <div id="hero-backdrop">
-    <?php get_template_part('template-parts/header-content'); ?>
     <section id="hero">
         <?php
         $headline_suffix = get_field('headline_suffix');

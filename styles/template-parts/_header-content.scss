@@ -1,43 +1,68 @@
 @use '../global/media';
 
-#header-content {
-  position: relative;
+#header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--mauve1);
+  background: black;
+  height: var(--space-header-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .content {
     display: flex;
     justify-content: space-between;
-    padding-top: var(--space-header-padding-top);
-    padding-bottom: var(--space-header-padding-bottom);
   }
 
   .logo {
+    display: block;
     color: inherit;
-    width: 60px;
+    width: 50px;
     margin-bottom: -10px;
 
     @include media.tablet {
-      width: 80px;
+      margin-right: 8px;
     }
+  }
+
+  .mobile-nav-wrapper {
+    display: block;
+    margin-top: -10px;
   }
 
   .desktop-nav {
     display: none;
   }
 
+  @include media.laptop {
+    .content {
+      justify-content: flex-start;
+    }
+
+    .mobile-nav-wrapper {
+      display: none;
+    }
+
+    .desktop-nav {
+      display: block;
+    }
+  }
+
   .menu {
     list-style-type: none;
     display: flex;
-    gap: 32px;
+    gap: 28px;
   }
 
   .menu-item a {
     font-size: 0.875rem;
+    font-weight: 600;
     color: inherit;
-    letter-spacing: 0.2em;
-    font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.2ch;
 
     &:hover {
       text-decoration: underline;
