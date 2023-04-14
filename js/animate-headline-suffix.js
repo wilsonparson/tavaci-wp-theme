@@ -26,7 +26,7 @@ function animateHeadlineSuffix() {
   const keyframes = [{ opacity: 1 }, { opacity: 0 }]
 
   const baseOptions = {
-    duration: 3000,
+    duration: 2000,
     easing: 'ease-out',
   }
 
@@ -36,7 +36,8 @@ function animateHeadlineSuffix() {
 
   const forwardsOptions = {
     direction: 'normal',
-    delay: 3000,
+    delay: 2000,
+    duration: 1500,
   }
 
   const backwardsOptions = {
