@@ -8,6 +8,7 @@
 @use 'global/utility';
 
 // Template Parts
+@use 'template-parts/footer-content';
 @use 'template-parts/hamburger-button';
 @use 'template-parts/header-content';
 @use 'template-parts/mobile-nav';

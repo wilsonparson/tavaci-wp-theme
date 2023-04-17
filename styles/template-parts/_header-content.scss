@@ -19,9 +19,9 @@
   }
 
   .logo {
+    // Width is inlined to prevent big shifts on CSS load
     display: block;
     color: inherit;
-    width: 50px;
     margin-bottom: -10px;
 
     @include media.tablet {
