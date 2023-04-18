@@ -1,9 +1,17 @@
 @use './global/media';
 
 .home /* This is a class added to the body by Wordpress */ {
+  --color-header-background: black;
+  --color-header-text-high-contrast: white;
+  --color-header-text-low-contrast: white;
+  --color-header-border-bottom: black;
+
   #hero-backdrop {
     position: relative;
-    background: linear-gradient(black, hsl(357 50% 40%) 40%);
+    background: linear-gradient(
+      var(--color-header-background),
+      hsl(357 50% 40%) 40%
+    );
     color: white;
     text-align: center;
     padding-top: 180px;

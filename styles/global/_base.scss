@@ -6,8 +6,8 @@ body {
 
 body {
   font-family: var(--font-family-body);
-  color: var(--color-body);
-  background-color: var(--color-body-bg);
+  color: var(--color-text-low-contrast);
+  background-color: var(--color-background);
   padding-top: var(--space-header-height);
 }
 
@@ -17,6 +17,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-text-high-contrast);
   font-family: var(--font-family-heading);
   margin-top: var(--space-heading-margin-top);
   margin-bottom: var(--space-heading-margin-bottom);
@@ -42,4 +43,8 @@ p {
 
 button:hover {
   cursor: pointer;
+}
+
+a {
+  color: inherit;
 }

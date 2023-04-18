@@ -1,10 +1,60 @@
+@use '../global/media';
+
 #footer {
-  .logo-wrapper {
-    // Width is inlined to prevent big shifts on CSS load
+  font-size: 0.875rem;
+  margin-top: 84px;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  background: var(--mauve2);
+
+  a {
+    color: inherit;
+    transition: color 200ms;
+    &:hover {
+      color: var(--color-text-high-contrast);
+    }
+  }
+
+  .sections-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include media.tablet {
+      flex-direction: row;
+      gap: 48px;
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .section-title {
+    margin-top: 0;
+    color: inherit;
+    font-family: var(--font-family-body);
+    font-size: inherit;
   }
 
   .social-icons {
-    // temporary
-    width: 40px;
+    display: flex;
+    gap: 12px;
+    a {
+      color: var(--mauve9);
+      display: block;
+      &:hover {
+        color: var(--mauve10);
+      }
+    }
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  small {
+    display: block;
+    margin-top: 48px;
   }
 }

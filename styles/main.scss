@@ -1,4 +1,5 @@
 // Global
+@use 'global/radix-ui-colors';
 @use 'global/reset';
 @use 'global/media';
 @use 'global/vars';
@@ -15,4 +16,5 @@
 
 // Templates
 @use 'front-page';
+@use 'header';
 @use 'page';
