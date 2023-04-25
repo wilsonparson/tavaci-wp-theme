@@ -1,0 +1,33 @@
+#archive-concert-program {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  a.concert-program {
+    display: block;
+    background: var(--mauve3);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 20px;
+    border: solid 1px var(--mauve7);
+
+    &:hover {
+      background: var(--mauve4);
+      border-color: var(--mauve8);
+    }
+
+    h2.date {
+      font-size: 1rem;
+      font-family: var(--font-family-body);
+      color: inherit;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    p.title {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+}
