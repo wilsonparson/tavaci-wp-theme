@@ -5,7 +5,8 @@
   margin-top: 84px;
   padding-top: 64px;
   padding-bottom: 48px;
-  background: var(--mauve2);
+  background: var(--color-footer-background);
+  border-top: solid 1px var(--color-footer-border-top);
 
   a {
     color: inherit;
@@ -50,6 +51,7 @@
   }
 
   .logo {
+    color: var(--color-brand);
     margin-right: auto;
   }
 

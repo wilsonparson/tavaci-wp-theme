@@ -10,17 +10,16 @@
     text-decoration: none;
     border-radius: 12px;
     padding: 20px;
-    border: solid 1px var(--mauve7);
+    border: solid 1px var(--mauve4);
 
     &:hover {
       background: var(--mauve4);
-      border-color: var(--mauve8);
+      border-color: var(--mauve5);
     }
 
     h2.date {
       font-size: 1rem;
       font-family: var(--font-family-body);
-      color: inherit;
       margin: 0;
       margin-bottom: 8px;
     }
