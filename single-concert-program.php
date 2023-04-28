@@ -13,6 +13,13 @@ function students_as_array(string $file_name): array
     return preg_split('/\n/', $file_contents, PREG_SPLIT_NO_EMPTY);
 }
 
+function students_as_ul(string $file_name)
+{
+    $students = students_as_array($file_name);
+    $students_as_list_items = array_map(fn ($student) => "<li>$student</li>", $students);
+    return "<ul>" . join($students_as_list_items) . "</ul>";
+}
+
 $prek_k = students_as_array("prek-k.txt");
 $first_second_grade = students_as_array("1st-2nd-grade.txt");
 $third_seventh_grade = students_as_array("3rd-7th-grade.txt");
@@ -91,15 +98,18 @@ function participant_as_html($participant)
         <h2>Students</h2>
 
         <section id="prek-k">
-            <h3>Pre-k – K</h3>
+            <h3>Pre-K – K</h3>
+            <?= students_as_ul('prek-k.txt'); ?>
         </section>
 
         <section id="1st-2nd-grade">
             <h3>1st – 2nd Grade</h3>
+            <?= students_as_ul('1st-2nd-grade.txt'); ?>
         </section>
 
         <section id="3rd-7th-grade">
             <h3>3rd – 7th Grade</h3>
+            <?= students_as_ul('3rd-7th-grade.txt'); ?>
         </section>
 
     </section>
