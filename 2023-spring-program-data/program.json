@@ -1,0 +1,107 @@
+{
+  "year": 2023,
+  "season": "Spring",
+  "title": "Shine",
+  "songs": [
+    {
+      "title": "Shine",
+      "participants": [
+        { "type": "anchor", "href": "#students", "title": "All Classes" }
+      ]
+    },
+    {
+      "title": "You Are My Sunshine",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#prek-k",
+          "title": "Pre-K – K"
+        }
+      ]
+    },
+    {
+      "title": "POP",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#3rd-7th-grade",
+          "title": "3rd – 7th Grade"
+        }
+      ]
+    },
+    {
+      "title": "Crocodile Rock",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "1st-2nd-grade",
+          "title": "1st – 2nd Grade"
+        }
+      ]
+    },
+    {
+      "title": "Let’s Go to the Movies",
+      "participants": [{ "type": "text", "title": "Specialty" }]
+    },
+    {
+      "title": "Knee Deep—Dig a Little Deeper",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#prek-k",
+          "title": "Pre-K – 2nd Grade"
+        }
+      ]
+    },
+    {
+      "title": "Elvis",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#3rd-7th-grade",
+          "title": "3rd – 7th Grade"
+        }
+      ]
+    },
+    {
+      "title": "Try Everything / Bruno / You’re Welcome",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#prek-k",
+          "title": "Pre-K – 2nd Grade"
+        }
+      ]
+    },
+    {
+      "title": "Armed Forces",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#3rd-7th-grade",
+          "title": "3rd – 7th Grade"
+        }
+      ]
+    },
+    {
+      "title": "It’s America",
+      "participants": [
+        {
+          "type": "anchor",
+          "href": "#students",
+          "title": "All Classes"
+        },
+        {
+          "type": "list",
+          "title": "Soloists",
+          "names": [
+            "Danielle Deem",
+            "Andrea Richards",
+            "Eli Emerson",
+            "JT Christensen"
+          ]
+        }
+      ]
+    }
+  ]
+}
