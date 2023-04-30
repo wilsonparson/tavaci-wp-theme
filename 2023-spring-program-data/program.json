@@ -41,7 +41,49 @@
     },
     {
       "title": "Let’s Go to the Movies",
-      "participants": [{ "type": "text", "title": "Specialty" }]
+      "participants": [
+        {
+          "type": "multi-column-list",
+          "names": [
+            "Finley Bailey",
+            "Ryker Barnett",
+            "Alissa Bays",
+            "Sadie Bingham",
+            "Jaycee Bodily",
+            "Madeliene Brockbank",
+            "Adelaide Bunnell",
+            "Bentlie Bywater",
+            "Danielle Deem",
+            "Lane Frandsen",
+            "Taylor Freeze",
+            "Rylee Freeze",
+            "Rylan Garbanati",
+            "Kentley Gardner",
+            "Zander Hansen",
+            "Tessa Horsley",
+            "Raine Howard",
+            "Millee Leishman",
+            "Kyson Lund",
+            "Logan McArthur",
+            "Ashton McArthur",
+            "Tyce Miller",
+            "Zoey Montes",
+            "Oaklee Nelson",
+            "Carter Nelson",
+            "Finn Nelson",
+            "Abbi Ostler",
+            "Rigdon Owen",
+            "Hudson Owen",
+            "Paitley Prescott",
+            "Addison Robinson",
+            "Emi Thompson",
+            "Lyla Trevino",
+            "Ledger Wayment",
+            "Maggie Wilde",
+            "Layla Wood"
+          ]
+        }
+      ]
     },
     {
       "title": "Knee Deep—Dig a Little Deeper",

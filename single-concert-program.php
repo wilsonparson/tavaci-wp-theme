@@ -9,8 +9,8 @@ $program_json = file_get_contents("$program_base_dir/program.json");
 function students_as_array(string $file_name): array
 {
     global $program_base_dir;
-    $file_contents = file_get_contents("$program_base_dir/$file_name");
-    return preg_split('/\n/', $file_contents, PREG_SPLIT_NO_EMPTY);
+    $students = file("$program_base_dir/$file_name");
+    return $students;
 }
 
 function students_as_ul(string $file_name)
@@ -24,11 +24,14 @@ $prek_k = students_as_array("prek-k.txt");
 $first_second_grade = students_as_array("1st-2nd-grade.txt");
 $third_seventh_grade = students_as_array("3rd-7th-grade.txt");
 
-print_r($prek_k);
-
 $program = json_decode($program_json);
 
 $title = "$program->season $program->year Concert";
+
+function names_as_list_items(array $names)
+{
+    return join(array_map(fn ($name) => "<li>$name</li>", $names));
+}
 
 function participant_as_html($participant)
 {
@@ -36,12 +39,8 @@ function participant_as_html($participant)
         return "<a class=\"participant-title\" href=\"$participant->href\">$participant->title</a>";
     }
 
-    if ($participant->type == 'text') {
-        return "<span class=\"participant-title\">$participant->title</span>";
-    }
-
     if ($participant->type == 'list') {
-        $names_as_list_items = join(array_map(fn ($name) => "<li>$name</li>", $participant->names));
+        $names_as_list_items = names_as_list_items($participant->names);
 
         return "
         <dl>
@@ -53,6 +52,12 @@ function participant_as_html($participant)
             </dd>
         </dl>
         ";
+    }
+
+    if ($participant->type == 'multi-column-list') {
+        $names_as_list_items = names_as_list_items($participant->names);
+
+        return "<ul class=\"multi-column-list\">$names_as_list_items</ul>";
     }
 }
 ?>
