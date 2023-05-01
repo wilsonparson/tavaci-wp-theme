@@ -1,0 +1,53 @@
+#teachers {
+  figure {
+    display: inline-block;
+  }
+
+  figure + figure {
+    margin-left: 48px;
+  }
+
+  figcaption {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 0 1px 1px hsl(0 0% 0% / 0.1), 0 2px 2px hsl(0 0% 0% / 0.1);
+    // Photos are a little overexposed
+    filter: brightness(0.9);
+  }
+
+  .teacher-lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teacher-list {
+    flex-grow: 1;
+    margin-right: 32px;
+  }
+
+  h3 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-family: var(--font-family-body);
+
+    // Temporary work-around since I was changing the root
+    // font size in media queries on the 2022
+    // program site, but I don't want to do that
+    // for the whole WordPress site.
+    font-size: calc(1.25rem * 0.875);
+
+    @media (min-width: 600px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}

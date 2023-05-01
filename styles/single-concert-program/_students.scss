@@ -1,0 +1,15 @@
+#students {
+  .g-well {
+    margin-bottom: 32px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+    @media (min-width: 600px) {
+      columns: 3;
+    }
+    font-size: 0.875rem;
+  }
+}

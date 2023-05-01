@@ -18,3 +18,7 @@
 @use 'archive-concert-program';
 @use 'front-page';
 @use 'header';
+@use 'single-concert-program/program';
+@use 'single-concert-program/single-concert-program';
+@use 'single-concert-program/students';
+@use 'single-concert-program/teachers';

@@ -8,3 +8,9 @@
 .g-page-title {
   font-size: 24px;
 }
+
+.g-well {
+  background: var(--color-well-background);
+  border-radius: var(--border-radius-well);
+  padding: var(--space-well-padding);
+}

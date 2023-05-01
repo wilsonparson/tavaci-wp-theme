@@ -6,28 +6,41 @@
   --color-background: var(--mauve1);
   --color-brand: var(--red9);
 
+  // Header
   --color-header-background: var(--mauve2);
   --color-header-text-low-contrast: var(--mauve11);
   --color-header-text-high-contrast: var(--mauve12);
   --color-header-border-bottom: var(--mauve6);
 
+  // Footer
   --color-footer-background: var(--mauve2);
   --color-footer-border-top: var(--mauve6);
+
+  // Well
+  --color-well-background: var(--mauve3);
 
   // Fonts
   --font-family-heading: 'Oswald';
   --font-family-body: 'Montserrat';
-  --font-size-h1: 3rem;
+  --font-size-h1: 2.5rem;
   --font-size-h2: 2rem;
-  --font-size-h3: 1.5rem;
+  --font-size-h3: 1.25rem;
 
   // Space
   --space-body-padding-x: 32px;
   --space-heading-margin-top: 1.25em;
   --space-heading-margin-bottom: 0.75em;
   --space-header-height: 60px;
+  --space-well-padding: 16px;
+
+  // Radii
+  --border-radius-well: 16px;
 
   @include media.tablet {
     --space-body-padding-x: 64px;
+    --space-well-padding: 32px;
+    --font-size-h1: 4rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 1.5rem;
   }
 }

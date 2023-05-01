@@ -1,0 +1,100 @@
+#single-concert-program {
+  --space-body-padding-x: 16px;
+  @media (min-width: 600px) {
+    --space-body-padding-x: 32px;
+  }
+
+  font-size: 0.875rem;
+
+  @media (min-width: 600px) {
+    font-size: revert;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .g-max-width-wrapper {
+    max-width: 700px;
+  }
+
+  a {
+    font-weight: 500;
+    color: var(--red11);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    color: var(--red11);
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    line-height: 1;
+  }
+
+  h2 {
+    padding-left: var(--space-well-padding);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--red11);
+    text-transform: uppercase;
+    letter-spacing: 0.2ch;
+  }
+
+  nav {
+    margin-top: 32px;
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2ch;
+    color: var(--color-text-high-contrast);
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 8px 24px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #special-thanks {
+    ul {
+      list-style-type: none;
+      padding-left: 32px;
+      margin-top: -8px;
+      margin-bottom: -8px;
+    }
+
+    li {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      text-indent: -2em;
+    }
+
+    li::before {
+      content: '🎵';
+      margin-right: 0.5rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
