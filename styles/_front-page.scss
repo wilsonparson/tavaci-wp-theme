@@ -43,6 +43,7 @@
     padding-inline: var(--space-body-padding-x);
 
     .headline {
+      font-family: var(--font-family-display);
       /** Min viewport: 320px; Max viewport: 768px; */
       font-size: clamp(3rem, 0.86rem + 10.71vw, 6rem);
       margin-top: 0;

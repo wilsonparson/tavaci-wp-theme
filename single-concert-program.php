@@ -105,18 +105,24 @@ function participant_as_html($participant)
             <h2>Students</h2>
 
             <section id="prek-k" class="g-well">
-                <h3>Pre-K – K</h3>
-                <?= students_as_ul('prek-k.txt'); ?>
+                <div class="g-well-body">
+                    <h3>Pre-K – K</h3>
+                    <?= students_as_ul('prek-k.txt'); ?>
+                </div>
             </section>
 
             <section id="1st-2nd-grade" class="g-well">
-                <h3>1st – 2nd Grade</h3>
-                <?= students_as_ul('1st-2nd-grade.txt'); ?>
+                <div class="g-well-body">
+                    <h3>1st – 2nd Grade</h3>
+                    <?= students_as_ul('1st-2nd-grade.txt'); ?>
+                </div>
             </section>
 
             <section id="3rd-7th-grade" class="g-well">
-                <h3>3rd – 7th Grade</h3>
-                <?= students_as_ul('3rd-7th-grade.txt'); ?>
+                <div class="g-well-body">
+                    <h3>3rd – 7th Grade</h3>
+                    <?= students_as_ul('3rd-7th-grade.txt'); ?>
+                </div>
             </section>
 
         </section>
@@ -124,31 +130,33 @@ function participant_as_html($participant)
         <section id="teachers">
             <h2>Teachers</h2>
             <div class="g-well">
-                <figure>
-                    <img src="/wp-content/themes/tavaci-wp-theme/img/avatar-megan.jpeg" alt="" />
-                    <figcaption>Megan Owen</figcaption>
-                </figure>
-                <figure>
-                    <img src="/wp-content/themes/tavaci-wp-theme/img/avatar-karalee.jpeg" alt="" />
-                    <figcaption>Karalee Kidd</figcaption>
-                </figure>
-                <div class="teacher-lists">
-                    <div class="teacher-list">
-                        <h3>Assistant Teachers</h3>
-                        <ul>
-                            <li>Sherrie Wayment</li>
-                            <li>Vali Veater</li>
-                        </ul>
-                    </div>
-                    <div class="teacher-list">
-                        <h3>Student Teachers</h3>
-                        <ul>
-                            <li>Brooke Walker</li>
-                            <li>Lauren Brockbank</li>
-                            <li>Lydia Donaldson</li>
-                            <li>Ethan McArthur</li>
-                            <li>Madelyn Little</li>
-                        </ul>
+                <div class="g-well-body">
+                    <figure>
+                        <img src="/wp-content/themes/tavaci-wp-theme/img/avatar-megan.jpeg" alt="" />
+                        <figcaption>Megan Owen</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/wp-content/themes/tavaci-wp-theme/img/avatar-karalee.jpeg" alt="" />
+                        <figcaption>Karalee Kidd</figcaption>
+                    </figure>
+                    <div class="teacher-lists">
+                        <div class="teacher-list">
+                            <h3>Assistant Teachers</h3>
+                            <ul>
+                                <li>Sherrie Wayment</li>
+                                <li>Vali Veater</li>
+                            </ul>
+                        </div>
+                        <div class="teacher-list">
+                            <h3>Student Teachers</h3>
+                            <ul>
+                                <li>Brooke Walker</li>
+                                <li>Lauren Brockbank</li>
+                                <li>Lydia Donaldson</li>
+                                <li>Ethan McArthur</li>
+                                <li>Madelyn Little</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,18 +165,21 @@ function participant_as_html($participant)
         <section id="special-thanks">
             <h2>Special Thanks</h2>
             <div class="g-well">
-
-                <ul>
-                    <li>
-                        <strong>TavaCi Corp., Tami Van Dusen, and Cindy Bowen</strong> for
-                        providing this amazing program
-                    </li>
-                    <li>
-                        <strong>Melanie Day</strong> and the
-                        <strong>Box Elder High School Tech and Light Crew</strong>
-                    </li>
-                    <li><strong>Candice Nichols</strong>, Backstage Manager</li>
-                </ul>
+                <div class="g-well-body">
+                    <ul>
+                        <li>
+                            <strong>TavaCi Corp., Tami Van Dusen, and Cindy Bowen</strong> for
+                            providing this amazing program
+                        </li>
+                        <li>
+                            <strong>Melanie Day</strong> and the
+                            <strong>Box Elder High School Tech and Light Crew</strong>
+                        </li>
+                        <li>
+                            <strong>Candice Nichols</strong>, Backstage Manager
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </div>

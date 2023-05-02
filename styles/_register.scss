@@ -1,0 +1,103 @@
+@use './global/media';
+
+#register {
+  .registration-steps {
+    --step-number-width: 1.5em;
+    --step-number-margin: 16px;
+    --step-offset: calc(var(--step-number-width) + var(--step-number-margin));
+
+    list-style-type: none;
+    padding: 0;
+    counter-reset: registration-step 0;
+
+    > li {
+      counter-increment: registration-step;
+    }
+
+    h2 {
+      margin-top: 1.5em;
+      display: flex;
+      align-items: baseline;
+    }
+
+    h2::before {
+      flex-shrink: 0;
+      content: counter(registration-step);
+      background: var(--red4);
+      color: var(--red11);
+      display: inline-block;
+      border-radius: 50%;
+      width: var(--step-number-width);
+      height: var(--step-number-width);
+      line-height: 1.5em;
+      margin-right: var(--step-number-margin);
+      text-align: center;
+    }
+  }
+
+  .badge {
+    background: var(--red9);
+    color: white;
+    border-radius: 50%;
+    padding: 0.25em;
+    margin-right: 8px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--red9);
+    color: white;
+    padding: 12px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--red10);
+    }
+
+    &:active {
+      background: var(--red11);
+    }
+  }
+
+  .payment-options {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    > li {
+      padding: 16px;
+      flex: 1;
+      background: var(--mauve1);
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .payment-option-title {
+      text-transform: uppercase;
+      letter-spacing: 0.2ch;
+      font-weight: 800;
+      color: var(--red11);
+      margin-top: 0;
+      font-size: 0.875rem;
+      font-family: inherit;
+    }
+
+    @include media.tablet {
+      flex-direction: row;
+    }
+  }
+
+  .venmo-username {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  address {
+    font-style: normal;
+    font-weight: 500;
+  }
+}

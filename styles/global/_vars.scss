@@ -18,20 +18,21 @@
 
   // Well
   --color-well-background: var(--mauve3);
+  --color-well-border: var(--mauve6);
 
   // Fonts
-  --font-family-heading: 'Oswald';
+  --font-family-display: 'Oswald';
   --font-family-body: 'Montserrat';
   --font-size-h1: 2.5rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.25rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.125rem;
 
   // Space
-  --space-body-padding-x: 32px;
+  --space-body-padding-x: 16px;
   --space-heading-margin-top: 1.25em;
   --space-heading-margin-bottom: 0.75em;
   --space-header-height: 60px;
-  --space-well-padding: 16px;
+  --space-well-padding: 32px;
 
   // Radii
   --border-radius-well: 16px;
@@ -39,8 +40,8 @@
   @include media.tablet {
     --space-body-padding-x: 64px;
     --space-well-padding: 32px;
-    --font-size-h1: 4rem;
-    --font-size-h2: 3rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2rem;
     --font-size-h3: 1.5rem;
   }
 }
