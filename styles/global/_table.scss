@@ -1,4 +1,14 @@
+@use '../global/media';
+
 .wp-block-table {
+  --table-font-size: 0.875rem;
+
+  @include media.tablet {
+    --table-font-size: 1rem;
+  }
+
+  font-size: var(--table-font-size);
+
   border-radius: 16px;
   border: solid 1px var(--mauve7);
 
