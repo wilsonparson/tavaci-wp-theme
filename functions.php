@@ -17,3 +17,4 @@ add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_filter('show_admin_bar', 'is_blog_admin');
 
 add_theme_support('title-tag');
+add_theme_support('post-thumbnails');
