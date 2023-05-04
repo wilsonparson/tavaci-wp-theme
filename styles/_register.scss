@@ -3,7 +3,7 @@
 #register {
   .registration-steps {
     --step-number-width: 1.5em;
-    --step-number-margin: 16px;
+    --step-number-margin: 8px;
     --step-offset: calc(var(--step-number-width) + var(--step-number-margin));
 
     list-style-type: none;
