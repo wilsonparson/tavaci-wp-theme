@@ -84,20 +84,22 @@ function participant_as_html($participant)
 
         <section id="program">
             <h2>Program</h2>
-            <table>
-                <tbody>
-                    <?php foreach ($program->songs as $song) : ?>
-                        <tr>
-                            <th><?= $song->title ?></th>
-                            <td>
-                                <?php foreach ($song->participants as $participant) : ?>
-                                    <?php echo participant_as_html($participant); ?>
-                                <?php endforeach; ?>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
+            <div class="wp-block-table">
+                <table>
+                    <tbody>
+                        <?php foreach ($program->songs as $song) : ?>
+                            <tr>
+                                <th><?= $song->title ?></th>
+                                <td>
+                                    <?php foreach ($song->participants as $participant) : ?>
+                                        <?php echo participant_as_html($participant); ?>
+                                    <?php endforeach; ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
 
