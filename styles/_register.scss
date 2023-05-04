@@ -60,44 +60,4 @@
       background: var(--red11);
     }
   }
-
-  .payment-options {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-    > li {
-      padding: 16px;
-      flex: 1;
-      background: var(--mauve1);
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    .payment-option-title {
-      text-transform: uppercase;
-      letter-spacing: 0.2ch;
-      font-weight: 800;
-      color: var(--red11);
-      margin-top: 0;
-      font-size: 0.875rem;
-      font-family: inherit;
-    }
-
-    @include media.tablet {
-      flex-direction: row;
-    }
-  }
-
-  .venmo-username {
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-
-  address {
-    font-style: normal;
-    font-weight: 500;
-  }
 }

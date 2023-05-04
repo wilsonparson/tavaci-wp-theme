@@ -23,20 +23,7 @@
             <div class="g-well">
                 <div class="g-well-body">
                     <p>You have two options for paying the $25 registration fee:</p>
-                    <ul class="payment-options">
-                        <li>
-                            <h3 class="payment-option-title">Venmo</h3>
-                            <code class="venmo-username">@Megan-Owen-2</code>
-                        </li>
-                        <li>
-                            <h3 class="payment-option-title">Check</h3>
-                            <address>
-                                Megan Owen<br>
-                                775 W 2250 S<br>
-                                Perry, UT 84302
-                            </address>
-                        </li>
-                    </ul>
+                    <?php get_template_part('template-parts/payment-options'); ?>
                 </div>
             </div>
         </li>

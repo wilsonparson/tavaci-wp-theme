@@ -15,7 +15,7 @@
   img {
     border-radius: 50%;
     width: 100px;
-    box-shadow: 0 1px 1px hsl(0 0% 0% / 0.1), 0 2px 2px hsl(0 0% 0% / 0.1);
+    box-shadow: var(--shadow-small);
     // Photos are a little overexposed
     filter: brightness(0.9);
   }

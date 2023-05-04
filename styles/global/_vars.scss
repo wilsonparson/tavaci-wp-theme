@@ -29,13 +29,17 @@
 
   // Space
   --space-body-padding-x: 16px;
-  --space-heading-margin-top: 1.25em;
+  --space-heading-margin-top: 2em;
   --space-heading-margin-bottom: 0.75em;
   --space-header-height: 60px;
   --space-well-padding: 32px;
 
   // Radii
   --border-radius-well: 16px;
+
+  // Shadows
+  --shadow-small: 0 1px 3px rgb(0, 0, 0, 0.2);
+  --shadow-medium: 0 2px 6px rgb(0, 0, 0, 0.2);
 
   @include media.tablet {
     --space-body-padding-x: 64px;
