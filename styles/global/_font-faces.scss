@@ -2,6 +2,7 @@
   font-family: 'Oswald';
   src: url('../fonts/Oswald-VariableFont_wght.ttf');
   font-display: swap;
+  font-weight: 700;
 }
 
 @font-face {
@@ -9,4 +10,5 @@
   src: url('../fonts/Montserrat-VariableFont_wght.ttf'),
     url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
   font-display: swap;
+  font-weight: 400 700;
 }
