@@ -69,7 +69,7 @@ function participant_as_html($participant)
 }
 ?>
 
-<main id="single-concert-program">
+<main id="single-concerts">
     <div class="g-max-width-wrapper">
 
         <h1><?= $title; ?></h1>

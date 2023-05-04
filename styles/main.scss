@@ -15,11 +15,11 @@
 @use 'template-parts/mobile-nav';
 
 // Templates
-@use 'archive-concert-program';
+@use 'archive-concerts';
 @use 'front-page';
 @use 'header';
 @use 'register';
-@use 'single-concert-program/program';
-@use 'single-concert-program/single-concert-program';
-@use 'single-concert-program/students';
-@use 'single-concert-program/teachers';
+@use 'single-concerts/program';
+@use 'single-concerts/single-concerts';
+@use 'single-concerts/students';
+@use 'single-concerts/teachers';

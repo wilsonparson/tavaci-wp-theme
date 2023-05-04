@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <?php
-$query = new WP_Query(array('post_type' => 'concert-program'));
+$query = new WP_Query(array('post_type' => 'concert'));
 ?>
 
-<main id="archive-concert-program" class="g-max-width-wrapper">
+<main id="archive-concerts" class="g-max-width-wrapper">
     <h1 class="g-page-title"><?php post_type_archive_title(); ?></h1>
     <div class="container">
         <?php while ($query->have_posts()) : $query->the_post(); ?>
