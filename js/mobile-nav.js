@@ -1,6 +1,5 @@
 {
   const hamburgerMenu = document.querySelector('[data-js="open-mobile-nav"]')
-  const mobileNav = document.querySelector('#mobile-nav')
   const closeMobileNavButton = document.querySelector(
     '[data-js="close-mobile-nav"]'
   )
@@ -9,18 +8,18 @@
   closeMobileNavButton.addEventListener('click', closeMobileNav)
 
   function openMobileNav() {
-    mobileNav.classList.add('open')
+    document.querySelector('#mobile-nav').classList.add('open')
   }
 
   function closeMobileNav() {
-    mobileNav.classList.remove('open')
+    document.querySelector('#mobile-nav').classList.remove('open')
   }
 
   const mql = window.matchMedia('(min-width: 550px)')
 
   mql.addEventListener('change', event => {
     if (event.matches) {
-      mobileNav.classList.remove('open')
+      document.querySelector('#mobile-nav').classList.remove('open')
     }
   })
 }

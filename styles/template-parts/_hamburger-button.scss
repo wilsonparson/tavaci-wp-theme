@@ -1,7 +1,10 @@
 #hamburger-button {
+  margin-right: -4px;
   background: transparent;
   color: inherit;
   border: none;
+
+  -webkit-tap-highlight-color: transparent;
 
   .hamburger-icon {
     display: flex;
