@@ -5,7 +5,7 @@
   "scripts": {
     "start": "concurrently \"npm:watch:css\" \"npm:live-reload\"",
     "live-reload": "browser-sync start --proxy \"tavaci.local\" --files \"css/styles.css\" \"**/*.php\"",
-    "build:css": "sass styles/main.scss css/styles.css",
+    "build:css": "sass styles/main.scss css/styles.css --style=compressed",
     "watch:css": "npm run build:css -- --watch"
   },
   "devDependencies": {
