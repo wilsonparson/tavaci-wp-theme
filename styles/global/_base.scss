@@ -1,3 +1,5 @@
+@use './mixins';
+
 html {
   scroll-padding-top: calc(var(--space-header-height) + 16px);
 }
@@ -36,10 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-h3);
-  color: var(--red11);
-  text-transform: uppercase;
-  letter-spacing: 0.2ch;
+  @include mixins.h3;
 }
 
 p {

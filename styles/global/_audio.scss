@@ -1,0 +1,11 @@
+@use './mixins';
+
+.wp-block-audio {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .wp-element-caption {
+    @include mixins.h3;
+    margin-bottom: 0.5em;
+  }
+}
