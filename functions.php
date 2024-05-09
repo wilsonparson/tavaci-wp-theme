@@ -4,7 +4,9 @@ function enqueue_scripts()
 {
 
     wp_enqueue_script('color-scheme', get_template_directory_uri() . '/js/color-scheme.js');
-    wp_enqueue_style('global-style', get_template_directory_uri() . '/css/styles.css');
+
+    $theme_version = wp_get_theme()->get('Version');
+    wp_enqueue_style('global-style', get_template_directory_uri() . '/css/styles.css', array(), $theme_version);
     if (is_front_page()) {
         wp_enqueue_script('animate-headline-suffix', get_template_directory_uri() . '/js/animate-headline-suffix.js', array(), false, true);
     }
