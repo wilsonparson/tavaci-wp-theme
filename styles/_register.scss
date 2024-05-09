@@ -1,6 +1,23 @@
 @use './global/media';
 
 #register {
+  .registration-closed {
+    background: var(--red4);
+    color: var(--red11);
+    border-radius: var(--border-radius-well);
+    padding: var(--space-well-padding);
+    margin-bottom: 32px;
+
+    h2 {
+      color: var(--red11);
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
   .registration-steps {
     --step-number-width: 1.5em;
     --step-number-margin: 8px;

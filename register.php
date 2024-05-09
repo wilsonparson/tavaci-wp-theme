@@ -1,8 +1,23 @@
 <?php /* Template Name: Register */ ?>
 
 <?php get_header(); ?>
+
+<?php
+$google_form_url = get_field('google_form_url');
+$registration_status = get_field('registration_status');
+$registration_is_open = $registration_status === 'open';
+?>
+
 <main id="register" class="g-max-width-wrapper">
     <h1 class="g-page-title"><?= the_title(); ?></h1>
+
+    <?php if (!$registration_is_open) { ?>
+        <div role="alert" class="registration-closed">
+            <h2>Registration is currently closed</h2>
+            <p>Please contact us if you have any questions!</p>
+        </div>
+    <?php } ?>
+
     <p>To register your child, follow these steps:</p>
 
     <ol class="registration-steps">
@@ -10,7 +25,10 @@
             <h2>Fill out the Registration Form</h2>
             <div class="g-well">
                 <div class="g-well-body">
-                    <a class="btn g-mb-4" href="<?= get_field('google_form_url'); ?>">Registration Form</a>
+
+                    <?php if ($registration_is_open) { ?>
+                        <a class="btn g-mb-4" href="<?= $google_form_url; ?>">Registration Form</a>
+                    <?php } ?>
                     <p><strong>Please make sure to fill out the entire form!</strong></p>
                     <p>You'll need to scroll all the way to the bottom and press the Submit button. Once you submit the form, you'll receive a confirmation email that we received your submission.
                     </p>
