@@ -37,10 +37,10 @@ $registration_is_open = $registration_status === 'open';
         </li>
 
         <li>
-            <h2>Pay the $25 fee</h2>
+            <h2>Pay the $30 fee</h2>
             <div class="g-well">
                 <div class="g-well-body">
-                    <p>You have two options for paying the $25 registration fee:</p>
+                    <p>You have two options for paying the $30 registration fee:</p>
                     <?php get_template_part('template-parts/payment-options'); ?>
                 </div>
             </div>
